@@ -1,0 +1,49 @@
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>RecordNo</th>
+        <th>Month</th>
+        <th>Year</th>
+        <th>EmpCode</th>
+        <th>PresentDays</th>
+        <th>WeeklyOff</th>
+        <th>EL</th>
+        <th>EOL</th>
+        <th>Holiday</th>
+        <th>WP</th>
+        <th>HPRH</th>
+        <th>ExtraDuty</th>
+        <th>Absent</th>
+        <th>ESIL</th>
+        <th>LWP</th>
+        <th>TotDays</th>
+        <th>update</th>
+    </tr>
+    {%for i in dayatttrans %}
+    <tr>
+        <td>{{i.RecordNo}}</td>
+        <td>{{i.Month}}</td>
+        <td>{{i.Year}}</td>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.PresentDays}}</td>
+        <td>{{i.WeeklyOff}}</td>
+        <td>{{i.EL}}</td>
+        <td>{{i.EOL}}</td>
+        <td>{{i.Holiday}}</td>
+        <td>{{i.WP}}</td>
+        <td>{{i.HPRH}}</td>
+        <td>{{i.ExtraDuty}}</td>
+        <td>{{i.Absent}}</td>
+        <td>{{i.ESIL}}</td>
+        <td>{{i.LWP}}</td>
+        <td>{{i.TotDays}}</td>
+        <td> <a href="/updatedayatttrans/{{i.id}}"> update</a>
+            <a href="/deletedayatttrans/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

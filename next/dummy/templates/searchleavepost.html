@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="2">
+    <tr>
+        <th>recordid</th>
+        <th>recorddate</th>
+        <th>month</th>
+        <th>year</th>
+        <th>time</th>
+    </tr>
+    {% for i in leavepost %}
+<tr>
+
+    <td>{{i.recordid}}</td>
+    <td>{{i.recorddate}}</td>
+    <td>{{i.month}}</td>
+    <td>{{i.year}}</td>
+    <td>{{i.time}}</td>
+    <td><a type="button" class="btn btn-warning" href="/updateleavepost/{{ i.id }}">Update</a>
+                    <a type="button" class="btn btn-danger" href="/deleteleavepost/{{ i.id }}">Delete</a>
+    </td>
+
+</tr>
+    {% endfor %}
+</table>
+{% endblock %}

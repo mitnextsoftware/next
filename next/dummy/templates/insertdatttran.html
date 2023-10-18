@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Attendance Transaction</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {%csrf_token%}
+    <table border="2">
+        <tr>
+            <td>
+                <label>RecordNo</label>
+            </td>
+            <td>
+                <input type="number" name="RecordNo" id="RecordNo" placeholder="Enter RecordNo">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Month</label>
+            </td>
+            <td>
+                <input type="number" name="Month" id="Month" placeholder="Enter Month">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Year</label>
+            </td>
+            <td>
+                <input type="number" name="Year" id="Year" placeholder="Enter Year">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EmpCode</label>
+            </td>
+            <td>
+                <input type="text" name="EmpCode" id="EmpCode" placeholder="Enter EmpCode">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>PresentDays</label>
+            </td>
+            <td>
+                <input type="number" name="PresentDays" id="PresentDays" placeholder="Enter PresentDays">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>WeeklyOff</label>
+            </td>
+            <td>
+                <input type="number" name="WeeklyOff" id="WeeklyOff" placeholder="Enter WeeklyOff">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EL</label>
+            </td>
+            <td>
+                <input type="number" name="EL" id="EL" placeholder="Enter EL">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EOL</label>
+            </td>
+            <td>
+                <input type="number" name="EOL" id="EOL" placeholder="Enter EOL">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Holiday</label>
+            </td>
+            <td>
+                <input type="number" name="Holiday" id="Holiday" placeholder="Enter Holiday">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>WP</label>
+            </td>
+            <td>
+                <input type="number" name="WP" id="WP" placeholder="Enter WP">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>HPRH</label>
+            </td>
+            <td>
+                <input type="number" name="HPRH" id="HPRH" placeholder="Enter HPRH">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>ExtraDuty</label>
+            </td>
+            <td>
+                <input type="number" name="ExtraDuty" id="ExtraDuty" placeholder="Enter ExtraDuty">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Absent</label>
+            </td>
+            <td>
+                <input type="number" name="Absent" id="Absent" placeholder="Enter Absent">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>ESIL</label>
+            </td>
+            <td>
+                <input type="number" name="ESIL" id="ESIL" placeholder="Enter ESIL">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>LWP</label>
+            </td>
+            <td>
+                <input type="number" name="LWP" id="LWP" placeholder="Enter LWP">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>TotDays</label>
+            </td>
+            <td>
+                <input type="number" name="TotDays" id="TotDays" placeholder="Enter TotDays">
+            </td>
+        </tr>
+
+
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" name="btn submit" id="btn submit" value="Save">
+                <input type="button" name="btn cancel" id="btn cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

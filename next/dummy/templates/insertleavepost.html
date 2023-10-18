@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leavepostmast</title>
+</head>
+<body>
+<table border="2">
+
+    <form method="POST">
+         {% csrf_token%}
+    <tr>
+        <td><label>Record Id</label></td>
+        <td><input type="number" name="recordid" id="recordid" placeholder="Enter the recordid"></td>
+    </tr>
+    <tr>
+        <td><label>Record Date</label></td>
+        <td><input type="date" name="recorddate" id="recorddate" placeholder="Enter the recorddate"></td>
+    </tr>
+    <tr>
+        <td><label>Month</label></td>
+        <td><input type="number" name="month" id="month" placeholder="Enter the month"></td>
+    </tr>
+    <tr>
+        <td><label>Year</label></td>
+        <td><input type="number" name="year" id="year" placeholder="Enter the year"></td>
+    </tr>
+    <tr>
+        <td><label>Time</label></td>
+        <td><input type="text" name="time" id="time" placeholder="Enter the time"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2">
+            <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+             <input type="button" name="btncancle" id="btncancle" value="cancle">
+        </td>
+    </tr>
+        </form>
+</table>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proftaxrange</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {%csrf_token%}
+    <table border="2">
+        <tr>
+            <td>
+                <label>state_code</label>
+            </td>
+            <td>
+                <input type="text" name="state_code" id="state_code" placeholder="Enter the state Code">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>range1</label>
+            </td>
+            <td>
+                <input type="number" name="range1" id="range1" placeholder="Enter the range1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>tax_amt1</label>
+            </td>
+            <td>
+                <input type="number" name="tax_amt1" id="tax_amt1" placeholder="Enter tax_amt1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>range2</label>
+            </td>
+            <td>
+                <input type="number" name="range2" id="range2" placeholder="Enter range2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>tax_amt2</label>
+            </td>
+            <td>
+                <input type="number" name="tax_amt2" id="tax_amt2" placeholder="Enter tax_amt2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>range3</label>
+            </td>
+            <td>
+                <input type="number" name="range3" id="range3" placeholder="Enter range3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>tax_amt3</label>
+            </td>
+            <td>
+                <input type="number" name="tax_amt3" id="tax_amt3" placeholder="Enter tax_amt3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>range4</label>
+            </td>
+            <td>
+                <input type="number" name="range4" id="range4" placeholder="Enter range4">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>tax_amt4</label>
+            </td>
+            <td>
+                <input type="number" name="tax_amt4" id="tax_amt4" placeholder="Enter tax_amt4">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>once_amt</label>
+            </td>
+            <td>
+                <input type="number" name="once_amt" id="once_amt" placeholder="Enter once_amt">
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" name="btn submit" id="btn submit" value="Save">
+                <input type="button" name="btn cancel" id="btn cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

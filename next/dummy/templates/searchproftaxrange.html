@@ -1,0 +1,36 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>state_code</th>
+        <th>range1</th>
+        <th>tax_amt1</th>
+        <th>range2</th>
+        <th>tax_amt2</th>
+        <th>range3</th>
+        <th>tax_amt3</th>
+        <th>range4</th>
+        <th>tax_amt4</th>
+        <th>once_amt</th>
+        <th>update</th>
+    </tr>
+    {%for i in protax %}
+    <tr>
+        <td>{{i.state_code}}</td>
+        <td>{{i.range1}}</td>
+        <td>{{i.tax_amt1}}</td>
+        <td>{{i.range2}}</td>
+        <td>{{i.tax_amt2}}</td>
+        <td>{{i.range3}}</td>
+        <td>{{i.tax_amt3}}</td>
+        <td>{{i.range4}}</td>
+        <td>{{i.tax_amt4}}</td>
+        <td>{{i.once_amt}}</td>
+        <td> <a href="/updateproftaxrange/{{i.id}}"> update</a>
+            <a href="/deleteproftaxrange/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

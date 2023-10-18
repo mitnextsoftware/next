@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="2">
+<tr>
+    <th>recordid</th>
+    <th>empcode</th>
+    <th>leaveqty</th>
+</tr>
+    {% for i in leavepostt %}
+<tr>
+
+    <td>{{i.recordid}}</td>
+    <td>{{i.empcode}}</td>
+    <td>{{i.leaveqty}}</td>
+    <td><a type="button" class="btn btn-warning" href="/updateleaveposttran/{{ i.id }}">Update</a>
+                    <a type="button" class="btn btn-danger" href="/deleteleaveposttran/{{ i.id }}">Delete</a>
+    </td>
+
+</tr>
+    {% endfor %}
+</table>
+{% endblock %}

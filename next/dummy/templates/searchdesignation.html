@@ -1,0 +1,48 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>DesigCode</th>
+        <th>DesigName</th>
+        <th>HRACnd</th>
+        <th>CACnd</th>
+        <th>PACnd</th>
+        <th>EduCnd</th>
+        <th>DACnd</th>
+        <th>BonusCnd</th>
+        <th>UniformCnd</th>
+        <th>VehicalCnd</th>
+        <th>UtilityCnd</th>
+        <th>DutyCnd</th>
+        <th>FieldCnd</th>
+        <th>WashCnd</th>
+        <th>MedicalCnd</th>
+        <th>PayScale</th>
+        <th>update</th>
+    </tr>
+    {%for i in design %}
+    <tr>
+        <td>{{i.DesigCode}}</td>
+        <td>{{i.DesigName}}</td>
+        <td>{{i.HRACnd}}</td>
+        <td>{{i.CACnd}}</td>
+        <td>{{i.PACnd}}</td>
+        <td>{{i.EduCnd}}</td>
+        <td>{{i.DACnd}}</td>
+        <td>{{i.BonusCnd}}</td>
+        <td>{{i.UniformCnd}}</td>
+        <td>{{i.VehicalCnd}}</td>
+        <td>{{i.UtilityCnd}}</td>
+        <td>{{i.DutyCnd}}</td>
+        <td>{{i.FieldCnd}}</td>
+        <td>{{i.WashCnd}}</td>
+        <td>{{i.MedicalCnd}}</td>
+        <td>{{i.PayScale}}</td>
+        <td> <a href="/updatedesignation/{{i.id}}"> update</a>
+            <a href="/deletedesignation/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

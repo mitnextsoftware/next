@@ -1,0 +1,21 @@
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>branchcode</th>
+        <th>branchname</th>
+        <th>update</th>
+    </tr>
+    {%for i in bran %}
+    <tr>
+        <td>{{i.branchcode}}</td>
+        <td>{{i.branchname}}</td>
+        <td> <a href="/updatebranch/{{i.id}}"> update</a>
+            <a href="/deletebranch/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family Detail</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {%csrf_token%}
+    <table border="2">
+        <tr>
+            <td>
+                <label>EmpCode</label>
+            </td>
+            <td>
+                <input type="text" name="EmpCode" id="EmpCode" placeholder="Enter EmpCode">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>FatherName</label>
+            </td>
+            <td>
+                <input type="text" name="FatherName" id="FatherName" placeholder="Enter FatherName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>FatherDob</label>
+            </td>
+            <td>
+                <input type="date" name="FatherDob" id="FatherDob" placeholder="Enter FatherDob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>MotherName</label>
+            </td>
+            <td>
+                <input type="text" name="MotherName" id="MotherName" placeholder="Enter MotherName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>MotherDob</label>
+            </td>
+            <td>
+                <input type="date" name="MotherDob" id="MotherDob" placeholder="Enter MotherDob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>WifeorHsName</label>
+            </td>
+            <td>
+                <input type="text" name="WifeorHsName" id="WifeorHsName" placeholder="Enter WifeorHsName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>wifeorHsdob</label>
+            </td>
+            <td>
+                <input type="date" name="wifeorHsdob" id="wifeorHsdob" placeholder="Enter wifeorHsdob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Son1Name</label>
+            </td>
+            <td>
+                <input type="text" name="Son1Name" id="Son1Name" placeholder="Enter Son1Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Son1Dob</label>
+            </td>
+            <td>
+                <input type="date" name="Son1Dob" id="Son1Dob" placeholder="Enter Son1Dob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Son2Name</label>
+            </td>
+            <td>
+                <input type="text" name="Son2Name" id="Son2Name" placeholder="Enter Son2Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Son2Dob</label>
+            </td>
+            <td>
+                <input type="date" name="Son2Dob" id="Son2Dob" placeholder="Enter Son2Dob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>DaughterName</label>
+            </td>
+            <td>
+                <input type="text" name="DaughterName" id="DaughterName" placeholder="Enter DaughterName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>daughterDob</label>
+            </td>
+            <td>
+                <input type="date" name="daughterDob" id="daughterDob" placeholder="Enter daughterDob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Daughter2Name</label>
+            </td>
+            <td>
+                <input type="text" name="Daughter2Name" id="Daughter2Name" placeholder="Enter Daughter2Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Daughter2Dob</label>
+            </td>
+            <td>
+                <input type="date" name="Daughter2Dob" id="Daughter2Dob" placeholder="Enter Daughter2Dob">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" name="btn submit" id="btn submit" value="Save">
+                <input type="button" name="btn cancel" id="btn cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

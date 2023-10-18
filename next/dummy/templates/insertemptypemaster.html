@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Type Master</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {%csrf_token%}
+    <table border="2">
+        <tr>
+            <td>
+                <label>EmpTypeSrNo</label>
+            </td>
+            <td>
+                <input type="text" name="EmpTypeSrNo" id="EmpTypeSrNo" placeholder="Enter EmpTypeSrNo">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EmpTypeName</label>
+            </td>
+            <td>
+                <input type="text" name="EmpTypeName" id="EmpTypeName" placeholder="Enter EmpTypeName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EmpTypeShortName</label>
+            </td>
+            <td>
+                <input type="text" name="EmpTypeShortName" id="EmpTypeShortName" placeholder="Enter EmpTypeShortName">
+            </td>
+        </tr>
+
+
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" name="btn submit" id="btn submit" value="Save">
+                <input type="button" name="btn cancel" id="btn cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

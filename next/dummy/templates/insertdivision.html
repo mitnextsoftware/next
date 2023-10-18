@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Division Master</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {%csrf_token%}
+    <table border="2">
+        <tr>
+            <td>
+                <label>Division Code</label>
+            </td>
+            <td>
+                <input type="text" name="DivisionCode" id="DivisionCode" placeholder="Enter the Division Code">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Division Name</label>
+            </td>
+            <td>
+                <input type="text" name="DivisionName" id="DivisionName" placeholder="Enter the Division Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>TransportAmt</label>
+            </td>
+            <td>
+                <input type="number" name="TransportAmt" id="TransportAmt" placeholder="Enter TransportAmt">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Food Amt</label>
+            </td>
+            <td>
+                <input type="number" name="FoodAmt" id="FoodAmt" placeholder="Enter FoodAmt">
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" name="btn submit" id="btn submit" value="Save">
+                <input type="button" name="btn cancel" id="btn cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

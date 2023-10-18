@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Division master</title>
+</head>
+<body>
+<form method="POST" action="">
+    {%csrf_token%}
+
+<table border="2">
+    <tr>
+        <td>
+            <label> Emp Code</label>
+
+        </td>
+        <td>
+            <input type="number" name="EmpCode" id="EmpCode" placeholder="enter Emp code">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> Date Of Relieve</label>
+
+        </td>
+        <td>
+            <input type="datetime-local" name="DateOfRelieve" id="DateOfRelieve" placeholder="enter Date Of Relieve ">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> Actual Work Days</label>
+
+        </td>
+        <td>
+            <input type="number" name="ActualWorkDays" id="ActualWorkDays" placeholder="enter Actual Work Days">
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label> Weekly Off </label>
+
+        </td>
+        <td>
+            <input type="number" name="WeeklyOff" id="WeeklyOff" placeholder="enter Weekly Off">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> Company Off </label>
+
+        </td>
+        <td>
+            <input type="number" name="CompanyOff" id="CompanyOff" placeholder="enter Company Off">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> Holidays </label>
+
+        </td>
+        <td>
+            <input type="number" name="Holidays" id="Holidays" placeholder="enter Holidays">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> ElBalance </label>
+
+        </td>
+        <td>
+            <input type="number" name="ElBalance" id="ElBalance" placeholder="enter ElBalance">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> TotalDays </label>
+
+        </td>
+        <td>
+            <input type="number" name="TotalDays" id="TotalDays" placeholder="enter TotalDays">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> NetPayable </label>
+
+        </td>
+        <td>
+            <input type="number" name="NetPayable" id="NetPayable" placeholder="enter NetPayable">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> Remark </label>
+
+        </td>
+        <td>
+            <input type="text" name="Remark" id="Remark" placeholder="enter Remark">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> RecoverBal </label>
+
+        </td>
+        <td>
+            <input type="number" name="RecoverBal" id="RecoverBal" placeholder="enter RecoverBal">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label> Note  </label>
+
+        </td>
+        <td>
+            <input type="text" name="Note" id="Note" placeholder="enter Note">
+
+        </td>
+    </tr>
+
+     <tr>
+        <td colspan="2" align="center"> <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+          <input type="submit" name="btnsubmit" id="btncanal " value="Cancal">  </td>
+    </tr>
+</table>
+
+</form>
+
+</body>
+</html>

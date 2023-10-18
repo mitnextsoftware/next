@@ -1,0 +1,39 @@
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>EmpCode</th>
+        <th>OfAmt1</th>
+        <th>OfDescription1</th>
+        <th>OfAmt2</th>
+        <th>OfDescription2</th>
+        <th>OfAmt3</th>
+        <th>OfDescription3</th>
+        <th>OfAmt4</th>
+        <th>OfDescription4</th>
+        <th>OfAmt5</th>
+        <th>OfDescription5</th>
+        <th>update</th>
+    </tr>
+    {%for i in facilities %}
+    <tr>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.OfAmt1}}</td>
+        <td>{{i.OfDescription1}}</td>
+        <td>{{i.OfAmt2}}</td>
+        <td>{{i.OfDescription2}}</td>
+        <td>{{i.OfAmt3}}</td>
+        <td>{{i.OfDescription3}}</td>
+        <td>{{i.OfAmt4}}</td>
+        <td>{{i.OfDescription4}}</td>
+        <td>{{i.OfAmt5}}</td>
+        <td>{{i.OfDescription5}}</td>
+        <td> <a href="/updateotherfacilities/{{i.id}}"> update</a>
+            <a href="/deleteotherfacilities/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

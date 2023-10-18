@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>EmpCode</th>
+        <th>DateOfRelieve</th>
+        <th>ActualWorkDays</th>
+        <th>WeeklyOff</th>
+        <th>CompanyOff</th>
+        <th>Holidays</th>
+        <th>ElBalance</th>
+        <th>TotalDays</th>
+        <th>NetPayable</th>
+        <th>Remark</th>
+        <th>RecoverBal</th>
+        <th>Note</th>
+        <th>update</th>
+    </tr>
+    {%for i in fand %}
+    <tr>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.DateOfRelieve}}</td>
+        <td>{{i.ActualWorkDays}}</td>
+        <td>{{i.WeeklyOff}}</td>
+        <td>{{i.CompanyOff}}</td>
+        <td>{{i.Holidays}}</td>
+        <td>{{i.ElBalance}}</td>
+        <td>{{i.TotalDays}}</td>
+        <td>{{i.NetPayable}}</td>
+        <td>{{i.Remark}}</td>
+        <td>{{i.RecoverBal}}</td>
+        <td>{{i.Note}}</td>
+        <td> <a href="/updateempfand/{{i.id}}"> update</a>
+            <a href="/deleteempfand/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

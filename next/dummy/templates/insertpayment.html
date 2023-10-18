@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leave master</title>
+</head>
+<body>
+<form method="POST" action="">
+    {%csrf_token%}
+
+<table border="2">
+
+    <tr>
+        <td>
+            <label>month</label>
+
+        </td>
+        <td>
+            <input type="number" name="month" id="month" placeholder="enter month">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>year</label>
+
+        </td>
+        <td>
+            <input type="number" name="year" id="year" placeholder="enter year">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>EmployeeCode</label>
+
+        </td>
+        <td>
+            <input type="text" name="EmployeeCode" id="EmployeeCode" placeholder="enter EmployeeCode">
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>CL</label>
+
+        </td>
+        <td>
+            <input type="number" name="CL" id="CL" placeholder="enter CL">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>SL</label>
+
+        </td>
+        <td>
+            <input type="number" name="SL" id="SL" placeholder="enter SL">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>ML </label>
+
+        </td>
+        <td>
+            <input type="number" name="ML" id="ML" placeholder="enter ML">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>ESIL </label>
+
+        </td>
+        <td>
+            <input type="number" name="ESIL" id="ESIL" placeholder="enter ESIL">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>LWP </label>
+
+        </td>
+        <td>
+            <input type="number" name="LWP" id="LWP" placeholder="enter LWP">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>PayableDays </label>
+
+        </td>
+        <td>
+            <input type="number" name="PayableDays" id="PayableDays" placeholder="enter PayableDays">
+
+        </td>
+    </tr>
+
+        <td>
+            <label>BasicPay </label>
+
+        </td>
+        <td>
+            <input type="number" name="BasicPay" id="BasicPay" placeholder="enter BasicPay">
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>BasicSalary </label>
+
+        </td>
+        <td>
+            <input type="number" name="BasicSalary" id="BasicSalary" placeholder="enter BasicSalary">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>PayablePayment </label>
+
+        </td>
+        <td>
+            <input type="number" name="PayablePayment" id="PayablePayment" placeholder="enter PayablePayment">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>ActualWorkDays </label>
+
+        </td>
+        <td>
+            <input type="number" name="ActualWorkDays" id="ActualWorkDays" placeholder="enter ML">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>SpecialAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="SpecialAmt" id="SpecialAmt" placeholder="enter SpecialAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>AriasAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="AriasAmt" id="AriasAmt" placeholder="enter AriasAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>HRAAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="HRAAmt" id="HRAAmt" placeholder="enter HRAAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>CAAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="CAAmt" id="CAAmt" placeholder="enter CAAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>PAAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="PAAmt" id="PAAmt" placeholder="enter PAAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>EduAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="EduAmt" id="EduAmt" placeholder="enter EduAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>UniformAllowanceAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="UniformAllowanceAmt" id="UniformAllowanceAmt" placeholder="enter UniformAllowanceAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>VehicalAllowanceAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="VehicalAllowanceAmt" id="VehicalAllowanceAmt" placeholder="enter VehicalAllowanceAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>WashingAllowanceAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="WashingAllowanceAmt" id="WashingAllowanceAmt" placeholder="enter WashingAllowanceAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>MedicalAllowanceAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="MedicalAllowanceAmt" id="MedicalAllowanceAmt" placeholder="enter MedicalAllowanceAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>OTAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="OTAmt" id="OTAmt" placeholder="enter OTAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>LeaveCashAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="LeaveCashAmt" id="LeaveCashAmt" placeholder="enter LeaveCashAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>TotalEarningAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="TotalEarningAmt" id="TotalEarningAmt" placeholder="enter TotalEarningAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>EPFAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="EPFAmt" id="EPFAmt" placeholder="enter EPFAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>EPSAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="EPSAmt" id="EPSAmt" placeholder="enter EPSAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>PFAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="PFAmt" id="PFAmt" placeholder="enter PFAmt">
+
+        </td>
+    </tr><tr>
+        <td>
+            <label>ESIAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="ESIAmt" id="ESIAmt" placeholder="enter ESIAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>PTAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="PTAmt" id="PTAmt" placeholder="enter PTAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>GSLICAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="GSLICAmt" id="GSLICAmt" placeholder="enter GSLICAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>LoanAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="LoanAmt" id="LoanAmt" placeholder="enter LoanAmt">
+
+        </td>
+    </tr><tr>
+        <td>
+            <label>LoanInterestAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="LoanInterestAmt" id="LoanInterestAmt" placeholder="enter LoanInterestAmt">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>SalaryAdvanceAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="SalaryAdvanceAmt" id="SalaryAdvanceAmt" placeholder="enter SalaryAdvanceAmt">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>TDSAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="TDSAmt" id="TDSAmt" placeholder="enter TDSAmt">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>TotalDeductionAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="TotalDeductionAmt" id="TotalDeductionAmt" placeholder="enter TotalDeductionAmt">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>NetEarningAmt </label>
+
+        </td>
+        <td>
+            <input type="number" name="NetEarningAmt" id="NetEarningAmt" placeholder="enter NetEarningAmt">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>EmpTypeSrNo </label>
+
+        </td>
+        <td>
+            <input type="number" name="EmpTypeSrNo" id="EmpTypeSrNo" placeholder="enter EmpTypeSrNo">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>DesigCode </label>
+
+        </td>
+        <td>
+            <input type="number" name="DesigCode" id="DesigCode" placeholder="enter DesigCode">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>GradeCode </label>
+
+        </td>
+        <td>
+            <input type="number" name="GradeCode" id="GradeCode" placeholder="enter GradeCode">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>BranchCode </label>
+
+        </td>
+        <td>
+            <input type="number" name="BranchCode" id="BranchCode" placeholder="enter BranchCode">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>TotInWords </label>
+
+        </td>
+        <td>
+            <input type="number" name="TotInWords" id="TotInWords" placeholder="enter TotInWords">
+
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>DateEnterInGrade </label>
+
+        </td>
+        <td>
+            <input type="datetime-local" name="DateEnterInGrade" id="DateEnterInGrade" placeholder="enter DateEnterInGrade">
+
+        </td>
+    </tr> <tr>
+        <td>
+            <label>GradeSrNo </label>
+
+        </td>
+        <td>
+            <input type="number" name="GradeSrNo" id="GradeSrNo" placeholder="enter GradeSrNo">
+
+        </td>
+    </tr>
+
+
+     <tr>
+        <td colspan="2" align="center"> <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+          <input type="submit" name="btnsubmit" id="btncanal " value="Cancal">  </td>
+    </tr>
+    <tr>
+        <td>
+
+        </td>
+    </tr>
+</table>
+
+
+</form>
+
+</body>
+</html>

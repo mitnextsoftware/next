@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Days Accumulation</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {%csrf_token%}
+    <table border="2">
+        <tr>
+            <td>
+                <label>SrNo</label>
+            </td>
+            <td>
+                <input type="number" name="SrNo" id="SrNo" placeholder="Enter SrNo">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EmpCode</label>
+            </td>
+            <td>
+                <input type="text" name="EmpCode" id="EmpCode" placeholder="Enter EmpCode">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>EmpName</label>
+            </td>
+            <td>
+                <input type="text" name="EmpName" id="EmpName" placeholder="Enter EmpName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Desig</label>
+            </td>
+            <td>
+                <input type="text" name="Desig" id="Desig" placeholder="Enter Desig">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Grade</label>
+            </td>
+            <td>
+                <input type="text" name="Grade" id="Grade" placeholder="Enter Grade">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>LeaveBalance</label>
+            </td>
+            <td>
+                <input type="number" name="LeaveBalance" id="LeaveBalance" placeholder="Enter LeaveBalance">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>LeaveAllotment</label>
+            </td>
+            <td>
+                <input type="number" name="LeaveAllotment" id="LeaveAllotment" placeholder="Enter LeaveAllotment">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>AllotmentMonth</label>
+            </td>
+            <td>
+                <input type="text" name="AllotmentMonth" id="AllotmentMonth" placeholder="Enter AllotmentMonth">
+            </td>
+        </tr>
+
+
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" name="btn submit" id="btn submit" value="Save">
+                <input type="button" name="btn cancel" id="btn cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>EmpCode</th>
+        <th>PrvEmployer1</th>
+        <th>Designation1</th>
+        <th>EmpFromDate1</th>
+        <th>EmpToDate1</th>
+        <th>PrvEmployer2</th>
+        <th>Designation2</th>
+        <th>EmpFromDate2</th>
+        <th>EmpToDate2</th>
+        <th>PrvEmployer3</th>
+        <th>Designation3</th>
+        <th>EmpFromDate3</th>
+        <th>EmpToDate3</th>
+        <th>PrvEmployer4</th>
+        <th>Designation4</th>
+        <th>EmpFromDate4</th>
+        <th>EmpToDate4</th>
+        <th>PrvEmployer5</th>
+        <th>Designation5</th>
+        <th>EmpFromDate5</th>
+        <th>EmpToDate5</th>
+        <th>update</th>
+    </tr>
+    {%for i in experi %}
+    <tr>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.PrvEmployer1}}</td>
+        <td>{{i.Designation1}}</td>
+        <td>{{i.EmpFromDate1}}</td>
+        <td>{{i.EmpToDate1}}</td>
+        <td>{{i.PrvEmployer2}}</td>
+        <td>{{i.Designation2}}</td>
+        <td>{{i.EmpFromDate2}}</td>
+        <td>{{i.EmpToDate2}}</td>
+        <td>{{i.PrvEmployer3}}</td>
+        <td>{{i.Designation3}}</td>
+        <td>{{i.EmpFromDate3}}</td>
+        <td>{{i.EmpToDate3}}</td>
+        <td>{{i.PrvEmployer4}}</td>
+        <td>{{i.Designation4}}</td>
+        <td>{{i.EmpFromDate4}}</td>
+        <td>{{i.EmpToDate4}}</td>
+        <td>{{i.PrvEmployer5}}</td>
+        <td>{{i.Designation5}}</td>
+        <td>{{i.EmpFromDate5}}</td>
+        <td>{{i.EmpToDate5}}</td>
+
+
+        <td> <a href="/updateempexperience/{{i.id}}"> update</a>
+            <a href="/deleteempexperience/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

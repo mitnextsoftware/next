@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>statecode</th>
+        <th>empshortname</th>
+        <th>update</th>
+    </tr>
+    {%for i in state %}
+    <tr>
+        <td>{{i.statecode}}</td>
+        <td>{{i.statename}}</td>
+        <td> <a href="/updatestate/{{i.id}}"> update</a>
+            <a href="/deletestate/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

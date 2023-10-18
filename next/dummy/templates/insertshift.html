@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Division master</title>
+</head>
+<body>
+<form method="POST" action="">
+    {%csrf_token%}
+
+<table border="2">
+
+        <td>
+            <label> shiftname </label>
+
+        </td>
+        <td>
+            <input type="text" name="shiftname" id="shiftname" placeholder="enter shiftname">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> shiftcode</label>
+
+        </td>
+        <td>
+            <input type="text" name="shiftcode" id="shiftcode" placeholder="enter shiftcode">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> time</label>
+
+        </td>
+        <td>
+            <input type="time" name="time" id="time" placeholder="enter time">
+
+        </td>
+    </tr>
+
+
+     <tr>
+        <td colspan="2" align="center"> <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+          <input type="submit" name="btnsubmit" id="btncanal " value="Cancal">  </td>
+    </tr>
+</table>
+
+
+
+
+
+
+</form>
+
+</body>
+</html>

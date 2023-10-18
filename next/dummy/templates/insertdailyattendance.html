@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Branch master</title>
+</head>
+<body>
+<form method="POST" action="" >
+    {%csrf_token%}
+<table border="2">
+    <tr>
+        <td>
+            <label>Record No </label>
+        </td>
+
+        <td>
+            <input type="number" name="RecordNo" id="RecordNo" placeholder="enter the Record No "  >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Attendance Date </label>
+
+        </td>
+
+
+        <td>
+            <input type="date" name="AttendanceDate" id="AttendanceDate" placeholder="enter the AttendanceDate" >
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"> <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+          <input type="submit" name="btn submit" id="btn canal " value="Cancal">  </td>
+    </tr>
+</table>
+</form>
+
+
+</body>

@@ -1,0 +1,24 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>DivisionCode</th>
+        <th>DivisionName</th>
+        <th>TransportAmt</th>
+        <th>FoodAmt</th>
+        <th>update</th>
+    </tr>
+    {%for i in divi %}
+    <tr>
+        <td>{{i.DivisionCode}}</td>
+        <td>{{i.DivisionName}}</td>
+        <td>{{i.TransportAmt}}</td>
+        <td>{{i.FoodAmt}}</td>
+        <td> <a href="/updatedivision/{{i.id}}"> update</a>
+            <a href="/deletedivision/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

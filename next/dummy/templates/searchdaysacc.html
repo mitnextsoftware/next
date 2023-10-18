@@ -1,0 +1,34 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>SrNo</th>
+        <th>EmpCode</th>
+        <th>EmpName</th>
+        <th>Desig</th>
+        <th>Grade</th>
+        <th>LeaveBalance</th>
+        <th>LeaveAllotment</th>
+        <th>AllotmentMonth</th>
+        <th>update</th>
+    </tr>
+    {%for i in daysacc %}
+    <tr>
+        <td>{{i.SrNo}}</td>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.EmpName}}</td>
+        <td>{{i.Desig}}</td>
+        <td>{{i.Grade}}</td>
+        <td>{{i.LeaveBalance}}</td>
+        <td>{{i.LeaveAllotment}}</td>
+        <td>{{i.AllotmentMonth}}</td>
+        <td> <a href="/updatedaysacc/{{i.id}}"> update</a>
+            <a href="/deletedaysacc/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leaveposttran</title>
+</head>
+<body>
+<table border="2">
+
+    <form method="POST">
+         {% csrf_token%}
+    <tr>
+        <td><label>RecordId</label></td>
+        <td><input type="number" name="recordid" id="recordid" placeholder="Enter the recordid"></td>
+    </tr>
+    <tr>
+        <td><label>EmpCode</label></td>
+        <td><input type="text" name="empcode" id="empcode" placeholder="Enter the empcode"></td>
+    </tr>
+    <tr>
+        <td><label>LeaveQty</label></td>
+        <td><input type="number" name="leaveqty" id="leaveqty" placeholder="Enter the leaveqty"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2">
+            <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+             <input type="button" name="btncancle" id="btncancle" value="cancle">
+        </td>
+    </tr>
+        </form>
+</table>
+</body>
+</html>

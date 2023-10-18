@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leave master</title>
+</head>
+<body>
+<form method="POST" action="">
+    {%csrf_token%}
+
+<table border="2">
+
+    <tr>
+        <td>
+            <label>basicpay</label>
+
+        </td>
+        <td>
+            <input type="number" name="basicpay" id="basicpay" placeholder="enter basic pay">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>leaveencashdate</label>
+
+        </td>
+        <td>
+            <input type="date" name="leaveencashdate" id="leaveencashdate" placeholder="enter date">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>leaveencashday</label>
+
+        </td>
+        <td>
+            <input type="number" name="leaveencashday" id="leaveencashday" placeholder="enter leave cash date">
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>ltcblog</label>
+
+        </td>
+        <td>
+            <input type="number" name="ltcblog" id="ltcblog" placeholder="enter ltc from">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>ltcfrom</label>
+
+        </td>
+        <td>
+            <input type="number" name="ltcfrom" id="ltcfrom" placeholder="enter ltc to">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>ltcto </label>
+
+        </td>
+        <td>
+            <input type="number" name="ltcto" id="ltcto" placeholder="enter ltc blog">
+
+        </td>
+    </tr>
+     <tr>
+        <td colspan="2" align="center"> <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+          <input type="submit" name="btnsubmit" id="btncanal " value="Cancal">  </td>
+    </tr>
+</table>
+
+</form>
+
+</body>
+</html>

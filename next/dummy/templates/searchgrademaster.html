@@ -1,0 +1,68 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>GradeCode</th>
+        <th>GradeName</th>
+        <th>SrNo</th>
+        <th>Pay1</th>
+        <th>Incr1</th>
+        <th>Pay2</th>
+        <th>Incr2</th>
+        <th>Pay3</th>
+        <th>Incr3</th>
+        <th>Pay4</th>
+        <th>Incr4</th>
+        <th>Per_HRA</th>
+        <th>Per_CA</th>
+        <th>Cash_CA</th>
+        <th>Per_PA</th>
+        <th>Per_Edu</th>
+        <th>Cash_Edu</th>
+        <th>Per_DA</th>
+        <th>Per_Bonus</th>
+        <th>Uniform_Allowance</th>
+        <th>Vehical_Allowance</th>
+        <th>Utility_Allowance</th>
+        <th>Duty_Allowance</th>
+        <th>Field_Allowance</th>
+        <th>Washing_Allowance</th>
+        <th>Medical_Allowance</th>
+        <th>update</th>
+    </tr>
+    {%for i in grade %}
+    <tr>
+        <td>{{i.GradeCode}}</td>
+        <td>{{i.GradeName}}</td>
+        <td>{{i.SrNo}}</td>
+        <td>{{i.Pay1}}</td>
+        <td>{{i.Incr1}}</td>
+        <td>{{i.Pay2}}</td>
+        <td>{{i.Incr2}}</td>
+        <td>{{i.Pay3}}</td>
+        <td>{{i.Incr3}}</td>
+        <td>{{i.Pay4}}</td>
+        <td>{{i.Incr4}}</td>
+        <td>{{i.Per_HRA}}</td>
+        <td>{{i.Per_CA}}</td>
+        <td>{{i.Cash_CA}}</td>
+        <td>{{i.Per_PA}}</td>
+        <td>{{i.Per_Edu}}</td>
+        <td>{{i.Cash_Edu}}</td>
+        <td>{{i.Per_DA}}</td>
+        <td>{{i.Per_Bonus}}</td>
+        <td>{{i.Uniform_Allowance}}</td>
+        <td>{{i.Vehical_Allowance}}</td>
+        <td>{{i.Utility_Allowance}}</td>
+        <td>{{i.Duty_Allowance}}</td>
+        <td>{{i.Field_Allowance}}</td>
+        <td>{{i.Washing_Allowance}}</td>
+        <td>{{i.Medical_Allowance}}</td>
+        <td> <a href="/updategrademaster/{{i.id}}"> update</a>
+            <a href="/deletegrademaster/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

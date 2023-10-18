@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>RecordNo</th>
+        <th>AttendanceDate</th>
+        <th>update</th>
+    </tr>
+    {%for i in daily %}
+    <tr>
+        <td>{{i.RecordNo}}</td>
+        <td>{{i.AttendanceDate}}</td>
+        <td> <a href="/updatedailyattendance/{{i.id}}"> update</a>
+            <a href="/deletedailyattendance/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

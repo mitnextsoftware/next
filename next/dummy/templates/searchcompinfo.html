@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>compid</th>
+        <th>name</th>
+        <th>address</th>
+        <th>city</th>
+        <th>pin</th>
+        <th>phoneno</th>
+        <th>fax</th>
+        <th>email</th>
+        <th>website</th>
+        <th>vattin</th>
+        <th>csttin</th>
+        <th>excise</th>
+        <th>pfno</th>
+        <th>esino</th>
+        <th>EPFPER</th>
+        <th>EPSPER</th>
+        <th>MAXEPS</th>
+        <th>ESIPER</th>
+        <th>LabourWealfare1</th>
+        <th>LabourWealfare2</th>
+        <th>LabourWealfare3</th>
+        <th>LabourWealfare4</th>
+        <th>LabourWealfare5</th>
+        <th>TaDaper</th>
+        <th>update</th>
+    </tr>
+    {%for i in comp %}
+    <tr>
+        <td>{{i.compid}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.city}}</td>
+        <td>{{i.pin}}</td>
+        <td>{{i.phoneno}}</td>
+        <td>{{i.fax}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.website}}</td>
+        <td>{{i.vattin}}</td>
+        <td>{{i.csttin}}</td>
+        <td>{{i.excise}}</td>
+        <td>{{i.pfno}}</td>
+        <td>{{i.esino}}</td>
+        <td>{{i.EPFPER}}</td>
+        <td>{{i.EPSPER}}</td>
+        <td>{{i.MAXEPS}}</td>
+        <td>{{i.ESIPER}}</td>
+        <td>{{i.LabourWealfare1}}</td>
+        <td>{{i.LabourWealfare2}}</td>
+        <td>{{i.LabourWealfare3}}</td>
+        <td>{{i.LabourWealfare4}}</td>
+        <td>{{i.LabourWealfare5}}</td>
+        <td>{{i.TaDaper}}</td>
+        <td> <a href="/updatecompinfo/{{i.id}}"> update</a>
+            <a href="/deletecompinfo/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>userid</th>
+        <th>username</th>
+        <th>usertype</th>
+        <th>month</th>
+        <th>year</th>
+        <th>leavepostpassword</th>
+        <th>update</th>
+    </tr>
+    {%for i in master %}
+    <tr>
+        <td>{{i.userid}}</td>
+        <td>{{i.username}}</td>
+        <td>{{i.usertype}}</td>
+        <td>{{i.month}}</td>
+        <td>{{i.year}}</td>
+        <td>{{i.leavepostpassword}}</td>
+        <td> <a href="/updateuser/{{i.id}}"> update</a>
+            <a href="/deleteuser/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

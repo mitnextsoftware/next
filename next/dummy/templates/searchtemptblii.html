@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="2">
+<tr>
+    <th>empcode</th>
+    <th>totalearningamt</th>
+    <th>month</th>
+    <th>year</th>
+</tr>
+    {% for i in tetblii %}
+<tr>
+
+    <td>{{i.empcode}}</td>
+    <td>{{i.totalearningamt}}</td>
+    <td>{{i.month}}</td>
+    <td>{{i.year}}</td>
+    <td><a type="button" class="btn btn-warning" href="/updatetemptblii/{{ i.id }}">Update</a>
+                    <a type="button" class="btn btn-danger" href="/deletetemptblii/{{ i.id }}">Delete</a>
+    </td>
+
+</tr>
+    {% endfor %}
+</table>
+{% endblock %}

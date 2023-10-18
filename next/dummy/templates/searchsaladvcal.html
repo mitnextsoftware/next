@@ -1,0 +1,35 @@
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>SrNo</th>
+        <th>EmpCode</th>
+        <th>Month</th>
+        <th>Year</th>
+        <th>BasicPay</th>
+        <th>Attendance</th>
+        <th>DateOn</th>
+        <th>AccumulateSalAdv</th>
+        <th>SalAdv</th>
+        <th>update</th>
+    </tr>
+    {%for i in cal %}
+    <tr>
+        <td>{{i.SrNo}}</td>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.Month}}</td>
+        <td>{{i.Year}}</td>
+        <td>{{i.BasicPay}}</td>
+        <td>{{i.Attendance}}</td>
+        <td>{{i.DateOn}}</td>
+        <td>{{i.AccumulateSalAdv}}</td>
+        <td>{{i.SalAdv}}</td>
+        <td> <a href="/updatesaladvcal/{{i.id}}"> update</a>
+            <a href="/deletesaladvcal/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

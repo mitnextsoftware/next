@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Division master</title>
+</head>
+<body>
+<form method="POST" action="">
+    {%csrf_token%}
+
+<table border="2">
+
+        <td>
+            <label> SrNo </label>
+
+        </td>
+        <td>
+            <input type="number" name="SrNo" id="SrNo" placeholder="enter SrNo">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> EmpCode</label>
+
+        </td>
+        <td>
+            <input type="number" name="EmpCode" id="EmpCode" placeholder="enter Emp Code">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> Month</label>
+
+        </td>
+        <td>
+            <input type="number" name="Month" id="Month" placeholder="enter Month">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> Year</label>
+
+        </td>
+        <td>
+            <input type="number" name="Year" id="Year" placeholder="enter Year">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> BasicPay</label>
+
+        </td>
+        <td>
+            <input type="number" name="BasicPay" id="BasicPay" placeholder="enter Basic Pay">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> Attendance</label>
+
+        </td>
+        <td>
+            <input type="number" name="Attendance" id="Attendance" placeholder="enter Attendance">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> DateOn</label>
+
+        </td>
+        <td>
+            <input type="datetime-local" name="DateOn" id="DateOn" placeholder="enter DateOn">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> AccumulateSalAdv</label>
+
+        </td>
+        <td>
+            <input type="number" name="AccumulateSalAdv" id="AccumulateSalAdv" placeholder="enter AccumulateSalAdv">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label> SalAdv</label>
+
+        </td>
+        <td>
+            <input type="number" name="SalAdv" id="SalAdv" placeholder="enter SalAdv">
+
+        </td>
+    </tr>
+
+     <tr>
+        <td colspan="2" align="center"> <input type="submit" name="btnsubmit" id="btnsubmit" value="save">
+          <input type="submit" name="btnsubmit" id="btncanal " value="Cancal">  </td>
+    </tr>
+</table>
+
+</form>
+
+</body>
+</html>

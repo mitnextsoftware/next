@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="2">
+<tr>
+    <th>empcode</th>
+    <th>empname</th>
+    <th>pfno</th>
+    <th>payablepayment</th>
+    <th>specialamt</th>
+    <th>ariasamt</th>
+    <th>epfamt</th>
+    <th>epsamt</th>
+    <th>month</th>
+    <th>year</th>
+</tr>
+    {% for i in tetbl %}
+<tr>
+
+    <td>{{i.empcode}}</td>
+    <td>{{i.empname}}</td>
+    <td>{{i.pfno}}</td>
+    <td>{{i.payablepayment}}</td>
+    <td>{{i.specialamt}}</td>
+    <td>{{i.ariasamt}}</td>
+    <td>{{i.epfamt}}</td>
+    <td>{{i.epsamt}}</td>
+    <td>{{i.month}}</td>
+    <td>{{i.year}}</td>
+    <td><a type="button" class="btn btn-warning" href="/updatetemptbl/{{ i.id }}">Update</a>
+                    <a type="button" class="btn btn-danger" href="/deletetemptbl/{{ i.id }}">Delete</a>
+    </td>
+
+</tr>
+    {% endfor %}
+</table>
+{% endblock %}

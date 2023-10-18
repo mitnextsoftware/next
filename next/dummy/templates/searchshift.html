@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>shiftname</th>
+        <th>shiftcode</th>
+        <th>time</th>
+        <th>update</th>
+    </tr>
+    {%for i in employee %}
+    <tr>
+        <td>{{i.shiftname}}</td>
+        <td>{{i.shiftcode}}</td>
+        <td>{{i.time}}</td>
+        <td> <a href="/updateshift/{{i.id}}"> update</a>
+            <a href="/deleteshfit/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

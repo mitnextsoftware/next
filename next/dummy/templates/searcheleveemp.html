@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>basicpay</th>
+        <th>leaveencashdate</th>
+        <th>leaveencashday</th>
+        <th>ltcblog</th>
+        <th>ltcfrom</th>
+        <th>ltcto</th>
+        <th>update</th>
+    </tr>
+    {%for i in employee %}
+    <tr>
+        <td>{{i.basicpay}}</td>
+        <td>{{i.leaveencashdate}}</td>
+        <td>{{i.leaveencashday}}</td>
+        <td>{{i.ltcblog}}</td>
+        <td>{{i.ltcfrom}}</td>
+        <td>{{i.ltcto}}</td>
+        <td> <a href="/updateleaveemp/{{i.id}}"> update</a>
+            <a href="/deleteleave/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,22 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>EmpTypeSrNo</th>
+        <th>EmpTypeName</th>
+        <th>EmpTypeShortName</th>
+        <th>update</th>
+    </tr>
+    {%for i in emptymast %}
+    <tr>
+        <td>{{i.EmpTypeSrNo}}</td>
+        <td>{{i.EmpTypeName}}</td>
+        <td>{{i.EmpTypeShortName}}</td>
+        <td> <a href="/updateemptymast/{{i.id}}"> update</a>
+            <a href="/deleteemptymast/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

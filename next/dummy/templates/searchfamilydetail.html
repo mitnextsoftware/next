@@ -1,0 +1,46 @@
+ 
+{% block content %}
+
+<table border="1">
+    <tr>
+        <th>EmpCode</th>
+        <th>FatherName</th>
+        <th>FatherDob</th>
+        <th>MotherName</th>
+        <th>MotherDob</th>
+        <th>WifeorHsName</th>
+        <th>wifeorHsdob</th>
+        <th>Son1Name</th>
+        <th>Son1Dob</th>
+        <th>Son2Name</th>
+        <th>Son2Dob</th>
+        <th>DaughterName</th>
+        <th>daughterDob</th>
+        <th>Daughter2Name</th>
+        <th>Daughter2Dob</th>
+        <th>update</th>
+    </tr>
+    {%for i in family %}
+    <tr>
+        <td>{{i.EmpCode}}</td>
+        <td>{{i.FatherName}}</td>
+        <td>{{i.FatherDob}}</td>
+        <td>{{i.MotherName}}</td>
+        <td>{{i.MotherDob}}</td>
+        <td>{{i.WifeorHsName}}</td>
+        <td>{{i.wifeorHsdob}}</td>
+        <td>{{i.Son1Name}}</td>
+        <td>{{i.Son1Dob}}</td>
+        <td>{{i.Son2Name}}</td>
+        <td>{{i.Son2Dob}}</td>
+        <td>{{i.DaughterName}}</td>
+        <td>{{i.daughterDob}}</td>
+        <td>{{i.Daughter2Name}}</td>
+        <td>{{i.Daughter2Dob}}</td>
+        <td> <a href="/updatefamilydetail/{{i.id}}"> update</a>
+            <a href="/deletefamilydetail/{{i.id}}"> delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
